@@ -25,7 +25,6 @@ div
 	width: 300px;
 	margin-left: -150px;
 }
-
 .centerdiv
 {
 	position: fixed;
@@ -51,7 +50,7 @@ input[type=email] , input[type=password]
 }
 
 
-input[type=submit] 
+input[type=submit]
 {
 	padding: 4px 20px;
 	margin-top: 25px;
@@ -64,6 +63,11 @@ input[type=submit]
 	color: #e8ecef;
 	font-weight: bold;
 }
+input[type=submit]:hover
+{
+	background-color: #167026;
+}
+
 
 input[type=button]
 {
@@ -78,6 +82,10 @@ input[type=button]
 	background-color: #4d8ff9;
 	color: #e8ecef;
 	font-weight: bold;
+}
+input[type=button]:hover
+{
+	background-color: #183f7c;
 }
 
 p
