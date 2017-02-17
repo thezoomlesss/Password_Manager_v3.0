@@ -1,4 +1,4 @@
-div 
+#one
 {
 	/*
 		For the rounded corners
@@ -14,7 +14,7 @@ div
 	border-right: 6px solid #1c71bc;
 	
 	/*
-		Text formattingin the div
+		Text formatting in the div
 	*/
 	text-align:center;
 	padding-left: 40px;
@@ -22,19 +22,41 @@ div
 	padding-top: 0px;
 	padding-bottom: 10px;
 	background-color: #e8ecef;
+	
+	/* 
+		Div formatting
+	*/
 	width: 300px;
 	margin-left: -150px;
-}
-.centerdiv
-{
-	position: fixed;
+	position: relative;
 	top: 15%;
 	left: 50%;
 }
+#two
+{
+	right: 50px;
+	text-align: center;
+	position: absolute;
+	
+}
+
+#forgotpass
+{
+	font-family: Trebuchet MS, Helvetica, sans-serif;
+	color: white;
+}
+#clickhere
+{
+	font-family: Trebuchet MS, Helvetica, sans-serif;
+	text-decoration: underline;
+	color: #EEF612;
+}
+
 
 body
 {
 	background-color: #3891e0;
+	height: 100%;
 }
 
 input[type=email] , input[type=password]
