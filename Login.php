@@ -8,7 +8,7 @@
 	<div id="one" class="centerdiv">
 		<p> Log in</p>
 		<form action="Login.php" method="post">
-			<input type="email" name="email" placeholder="Email" size="35" required autofocus> </input>  <!-- Still thinking about required -->
+			<input type="email" name="email" placeholder="Email" size="35" required autofocus> </input> 
 			<br><br> 
 			<input type="password" name="pass" placeholder="Password" maxlength="12" size="35" required></input>
 			<input type="Submit" name="submit" value="Sign In"></input>
@@ -36,10 +36,10 @@
 	{
 		
 
-		$email =mysqli_real_escape_string($db, $_POST['email']);
-		$pass = mysqli_real_escape_string($db, $_POST['pass']);
-	
-		if( $result = $db->query("SHOW TABLES LIKE '".$email."'") )
+		$_SESSION["email"] =mysqli_real_escape_string($db, $_POST['email']);
+		$_SESSION["pass"] = mysqli_real_escape_string($db, $_POST['pass']);
+		
+		if( $result = $db->query("SHOW TABLES LIKE '".$_SESSION["email"]."'") )
 		{
 			if($result->num_rows == 1)    // I wonder if I need this if statement 
 			{
